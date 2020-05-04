@@ -1,0 +1,100 @@
+body {
+  color: hsl(234, 12%, 34%);
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer {
+  padding: 2%;
+}
+
+.top {
+  padding: 30px 0;
+}
+
+.heading-text {
+  padding: 0 35%;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, .2fr));
+  justify-content: center;
+  padding: 0 8%;
+  position: relative;
+  text-align: left;
+}
+
+.box {
+  border-radius: 2%;
+  box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+  margin: 30px;
+  padding: 10px 20px 40px 20px;
+  width: 320px;
+}
+
+.karma {
+  grid-column: 2 / 3;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.karma:hover {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.team-builder:hover {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.supervisor:hover {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.calculator:hover {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.supervisor, .calculator {
+  position: relative;
+  top: 50%;
+}
+
+.image {
+  position: relative;
+  left: 75%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: inline-block;
+  }
+}
